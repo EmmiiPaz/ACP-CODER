@@ -1,0 +1,32 @@
+@import "../sass/variables";
+
+@import "../sass/header";
+@import "../sass/prod";
+@import "../sass/aside";
+@import "../sass/footer";
+
+
+body{
+    margin-top: 105px;
+    background-color: #EEEEEE;
+}
+
+
+/****************** MEDIA QUERYS ******************/
+
+@media screen and (max-width: 992px) {
+    body{
+        margin-top: 60px;
+    }
+    
+}
+
+@media screen and (max-width: 768px ){
+
+    .carrusel__img{
+        padding: 2%;
+        min-width: 80px;
+        width:80px;
+        object-fit: contain;
+    }
+}
