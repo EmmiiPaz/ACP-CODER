@@ -1,0 +1,25 @@
+body {
+    margin-top: 105px;
+    background-color: #EEEEEE;
+    font-family: 'Rubik', sans-serif;
+}
+
+
+/****************** MEDIA QUERYS ******************/
+
+@media screen and (max-width: 992px) {
+    body {
+        margin-top: 60px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .carrusel__img {
+        padding: 2%;
+        min-width: 80px;
+        width: 80px;
+        object-fit: contain;
+    }
+}
