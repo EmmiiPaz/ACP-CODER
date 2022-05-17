@@ -4,6 +4,38 @@ body {
     font-family: 'Rubik', sans-serif;
 }
 
+// Maps
+$shadows:(box-s: 1px 3px 7px $celeste,
+    text-s : 1px 1px 4px rgb(0, 0, 0, 50%));
+
+
+// EXTEND
+.titleBase {
+    color: #ffffff;
+    text-align: center;
+    text-shadow: map-get($shadows, text-s);
+    border-bottom: 4px groove rgb(0, 0, 0)
+}
+
+.btnHover {
+    background-color: #E7F0FE;
+    color: $celeste;
+    border-color: #afb0b0;
+}
+
+// MIXIN
+@mixin botonBase ($colorBg) {
+    display: block;
+    padding: 5px 10px;
+    background-color: $colorBg;
+    border-color: $colorBg;
+    color: #ffffff;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 400;
+    transition-duration: 0.2s;
+}
+
 
 /****************** MEDIA QUERYS ******************/
 

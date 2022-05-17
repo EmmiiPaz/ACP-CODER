@@ -1,15 +1,13 @@
 .seccion__titulo {
-    color: #ffffff;
-    text-align: center;
-    text-shadow: 1px 1px 4px rgb(0, 0, 0, 75%);
-    border-bottom: 2px groove rgb(0, 0, 0)
+    @extend .titleBase;
+    font-size: 26px;
 }
 
 
 /* PRODUCTOS */
 
 
-.prod{
+.prod {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -17,7 +15,7 @@
     background-color: #ffffff;
     min-height: 390px;
     border-radius: 5px;
-    box-shadow: 1px 3px 7px $celeste;
+    box-shadow: map-get($shadows, box-s);
     transition: 0.1s;
 
     &:hover {
@@ -34,6 +32,7 @@
 
     &__titulo {
         text-align: center;
+        text-shadow: map-get($shadows, text-s);
         font-size: 1.5rem;
         font-weight: 600;
         padding: 5px;
@@ -41,24 +40,31 @@
 
     &__precio {
         text-align: center;
+        text-shadow: map-get($shadows, text-s);
         font-size: 1.2rem;
+    }
+
+    &__botones {
+        display: flex;
+
     }
 }
 
+
+
 .btn__comprar {
-    display: block;
-    padding: 8px 15px;
-    background-color: $celeste;
-    color: #ffffff;
-    border-style: outset;
-    border-width: 2px;
-    border-radius: 12px;
-    font-size: 1rem;
-    font-weight: bold;
-    transition-duration: 0.4s;
+
+    @include botonBase($celeste);
 
     &:hover {
-        background-color: #ffffff;
-        color: $celeste;
+        @extend .btnHover;
+    }
+}
+
+.btn__ver {
+    @include botonBase ($verde);
+
+    &:hover {
+        @extend .btnHover;
     }
 }

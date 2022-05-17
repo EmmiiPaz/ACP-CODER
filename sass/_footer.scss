@@ -1,11 +1,25 @@
 /* IMG */
 
 .redes__img {
-    height: 40px;
-    width: 40px;
+    font-size: 38px;
 }
 
-.footer__img{
+.footer__img {
     width: 80px;
     height: 110px;
+}
+
+// map con each
+$redesColor: (fb: #1B74E4,
+    tw: #1D9BF0,
+    inst: #F02A50,
+    yt: #FF0000,
+    wsp: #25D366);
+
+@each $name,
+$color in $redesColor {
+    .red--#{$name} {
+        color: $color
+    }
+
 }
