@@ -1,0 +1,26 @@
+.form__contenedor{
+    max-width: 800px;
+    min-height: 500px;
+    box-shadow: map-get($shadows , text-s );
+    background-color: $celeste_claro;
+}
+
+.boton {
+    max-width: 100px;
+    margin-top: 20px;
+    padding: 5px 15px;
+    background-color: #017AD5;
+    color: #ffffff;
+    border-radius: 7px;
+    border-style: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition-duration: 0.5s;
+
+    &:hover{
+        background-color: #ffffff;
+        border-color: aqua;
+        color: #017AD5;
+        box-shadow: map-get($shadows , box-s );
+    }
+}
