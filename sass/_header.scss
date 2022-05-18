@@ -2,3 +2,18 @@
 .nav__bg {
     background-color: $celeste;
 }
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__img{
+        object-fit: cover;
+    }
+    &__titulo{
+        font-size: 26px;
+        text-align: center;
+        margin: 0;
+    }
+}

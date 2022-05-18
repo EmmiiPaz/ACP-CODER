@@ -12,9 +12,8 @@ $shadows:(box-s: 1px 3px 7px $celeste,
 // EXTEND
 .titleBase {
     color: #ffffff;
-    text-align: center;
     text-shadow: map-get($shadows, text-s);
-    border-bottom: 4px groove rgb(0, 0, 0)
+    border-bottom: 4px groove rgb(0, 0, 0);
 }
 
 .btnHover {
