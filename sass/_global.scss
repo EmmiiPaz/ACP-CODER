@@ -35,9 +35,8 @@ $shadows:(box-s: 1px 3px 7px $celeste,
     transition-duration: 0.2s;
 }
 
-@mixin contenedor__form ($max-w , $min-h ){
+@mixin contenedor__form ($max-w){
     max-width: $max-w;
-    min-height: $min-h;
     box-shadow: map-get($shadows , text-s );
     background-color: $celeste_claro;
 }

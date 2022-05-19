@@ -1,13 +1,13 @@
 .form__contacto{
-    @include contenedor__form(800px, 500px);
+    @include contenedor__form(800px);
 }
 
 .form__login{
-    @include contenedor__form(800px, 400px);
-    height: 200px
+    @include contenedor__form(800px);
+    height: 400px
 }
 .form__registro{
-    @include contenedor__form(800px, 500px);
+    @include contenedor__form(800px);
 }
 .form__select{
     width: 96.5%;
