@@ -1,12 +1,21 @@
-.form__contenedor{
-    max-width: 800px;
-    min-height: 500px;
-    box-shadow: map-get($shadows , text-s );
-    background-color: $celeste_claro;
+.form__contacto{
+    @include contenedor__form(800px, 500px);
+}
+
+.form__login{
+    @include contenedor__form(800px, 400px);
+    height: 200px
+}
+.form__registro{
+    @include contenedor__form(800px, 500px);
+}
+.form__select{
+    width: 96.5%;
+    padding: 1rem 0.75rem;
 }
 
 .boton {
-    max-width: 100px;
+    width: 180px;
     margin-top: 20px;
     padding: 5px 15px;
     background-color: #017AD5;
