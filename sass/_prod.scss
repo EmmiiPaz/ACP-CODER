@@ -15,11 +15,12 @@
     background-color: #ffffff;
     min-height: 390px;
     border-radius: 5px;
-    box-shadow: map-get($shadows, box-s);
-    transition: 0.1s;
+    box-shadow: map-get($shadows , box-gris  );
+
+    transition: 0.3s;
 
     &:hover {
-        transform: scale(1.03);
+        box-shadow: map-get($shadows, box-s);
     }
 
     &__img {
