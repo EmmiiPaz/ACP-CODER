@@ -4,8 +4,7 @@
   "description": "Pagina web AcP Gaming",
   "main": "index.js",
   "scripts": {
-    "start": "sass ./sass/styles.scss ./css/styles.css -w --no-source-map -s compressed",
-    "build": "none build --output public"
+    "start": "sass ./sass/styles.scss ./css/styles.css -w --no-source-map -s compressed"
   },
   "repository": {
     "type": "git",
