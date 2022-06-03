@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "sass ./sass/styles.scss ./css/styles.css -w --no-source-map -s compressed",
-    "build": "build --output public"
+    "build": "none build --output public"
   },
   "repository": {
     "type": "git",
